@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+tqdm
+pretty_midi
+torch
+# optional: pygame (play MIDI inside demo.py --play), reportlab + python-pptx (tools/ report & slides)
