@@ -1,7 +1,7 @@
 # Generating Music with Machine Learning (Mini-Project 22, UE24CS352A)
 
 Team: Nagashri R Patil (PES1UG24CS289) and Nallamalli Kanaka Mani Sai Akhil (PES1UG24CS290)
-Repository: `https://github.com/<your-username>/music-generation-ml` (placeholder)
+https://github.com/Nagashri2304/music-generation-ml
 
 A PyTorch re-implementation of the core of the Stanford project *"Music Composition with Machine Learning"*
 (Kang, Kim, Ringdahl, 2018). It learns from a folder of MIDI files and generates new MIDI music with three models:
