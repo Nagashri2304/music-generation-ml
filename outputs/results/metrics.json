@@ -1,0 +1,167 @@
+{
+  "dataset": {
+    "dataset_name": "Nottingham folk MIDI",
+    "files_found": 1034,
+    "files_skipped": 3,
+    "songs_used": 1031,
+    "songs": {
+      "train": 824,
+      "val": 103,
+      "test": 104
+    },
+    "events": {
+      "train": 159284,
+      "val": 17333,
+      "test": 18920
+    },
+    "events_total": 195537,
+    "chord_vocab_size": 50,
+    "chord_vocab_coverage": 1.0,
+    "seed": 42
+  },
+  "next_event": [
+    {
+      "model": "Random (flat)",
+      "pitch_ce": 4.47733736038208,
+      "pitch_ppl": 88.00004577636719,
+      "pitch_top1": 0.0,
+      "pitch_top5": 0.0015795939858421577,
+      "dur_ce": 2.0794413089752197,
+      "dur_acc": 0.1649798162990698,
+      "n_events": 17093
+    },
+    {
+      "model": "Naive Bayes-like (prev chord)",
+      "pitch_ce": 2.4446005821228027,
+      "pitch_ppl": 11.525944709777832,
+      "pitch_top1": 0.17861112736207804,
+      "pitch_top5": 0.6640730123442344,
+      "dur_ce": 0.9899389743804932,
+      "dur_acc": 0.655355993681624,
+      "n_events": 17093
+    },
+    {
+      "model": "Naive Bayes-like (given chord)",
+      "pitch_ce": 2.3045525550842285,
+      "pitch_ppl": 10.019694328308105,
+      "pitch_top1": 0.22073363365120224,
+      "pitch_top5": 0.71935880184871,
+      "dur_ce": 0.9928054213523865,
+      "dur_acc": 0.6550634762768385,
+      "n_events": 17093
+    },
+    {
+      "model": "LSTM",
+      "pitch_ce": 1.651505470275879,
+      "pitch_ppl": 5.214824676513672,
+      "pitch_top1": 0.4297665711109811,
+      "pitch_top5": 0.900485578891944,
+      "dur_ce": 0.7127363681793213,
+      "dur_acc": 0.742350669864857,
+      "n_events": 17093
+    }
+  ],
+  "generation": {
+    "Real (test)": {
+      "scale_consistency_mean": 0.9831120837441052,
+      "scale_consistency_std": 0.029932850545564563,
+      "chord_tone_rate_mean": 0.7496955196701348,
+      "chord_tone_rate_std": 0.0768221850036146,
+      "repetition_rate_mean": 0.11179841141550143,
+      "repetition_rate_std": 0.09854942089231125,
+      "mean_abs_interval_mean": 2.623524511043224,
+      "mean_abs_interval_std": 0.6027896351435726,
+      "large_leap_rate_mean": 0.001317979335589625,
+      "large_leap_rate_std": 0.004775935224246665,
+      "pc_entropy_mean": 2.6287643873583546,
+      "pc_entropy_std": 0.20183391442596682,
+      "novelty_5gram_mean": 0.25937834728086223,
+      "novelty_5gram_std": 0.1730527707956811,
+      "interval_js_vs_real": 0.0
+    },
+    "Random (flat)": {
+      "scale_consistency_mean": 0.65234375,
+      "scale_consistency_std": 0.023030317145286992,
+      "chord_tone_rate_mean": 0.2810259441841504,
+      "chord_tone_rate_std": 0.03669411792669627,
+      "repetition_rate_mean": 0.009133858267716535,
+      "repetition_rate_std": 0.01024953706788849,
+      "mean_abs_interval_mean": 29.578897637795272,
+      "mean_abs_interval_std": 1.9505608948647584,
+      "large_leap_rate_mean": 0.7348031496062991,
+      "large_leap_rate_std": 0.03661002431831699,
+      "pc_entropy_mean": 3.5097954239509965,
+      "pc_entropy_std": 0.02715831499461673,
+      "novelty_5gram_mean": 1.0,
+      "novelty_5gram_std": 0.0,
+      "interval_js_vs_real": 0.6493104603630645
+    },
+    "Naive Bayes-like": {
+      "scale_consistency_mean": 0.92453125,
+      "scale_consistency_std": 0.032797987862253075,
+      "chord_tone_rate_mean": 0.7432081144764999,
+      "chord_tone_rate_std": 0.038463230244865504,
+      "repetition_rate_mean": 0.12897637795275588,
+      "repetition_rate_std": 0.02582341057445874,
+      "mean_abs_interval_mean": 5.359370078740158,
+      "mean_abs_interval_std": 0.5556885659967863,
+      "large_leap_rate_mean": 0.05417322834645669,
+      "large_leap_rate_std": 0.026192910722887295,
+      "pc_entropy_mean": 2.9945938521655675,
+      "pc_entropy_std": 0.108727271826859,
+      "novelty_5gram_mean": 0.8577419354838708,
+      "novelty_5gram_std": 0.048995104769386524,
+      "interval_js_vs_real": 0.17046009513609728
+    },
+    "LSTM": {
+      "scale_consistency_mean": 0.96609375,
+      "scale_consistency_std": 0.026909951835937945,
+      "chord_tone_rate_mean": 0.6410314492021986,
+      "chord_tone_rate_std": 0.06829599768892965,
+      "repetition_rate_mean": 0.10913385826771652,
+      "repetition_rate_std": 0.03177084856867436,
+      "mean_abs_interval_mean": 2.6026771653543306,
+      "mean_abs_interval_std": 0.2615558403532891,
+      "large_leap_rate_mean": 0.0026771653543307085,
+      "large_leap_rate_std": 0.005809721809668256,
+      "pc_entropy_mean": 2.8203351289580927,
+      "pc_entropy_std": 0.12359497423752248,
+      "novelty_5gram_mean": 0.3683870967741935,
+      "novelty_5gram_std": 0.10791323064664135,
+      "interval_js_vs_real": 0.003572701831140342
+    }
+  },
+  "midi_check": {
+    "Random (flat)": "5/5",
+    "Naive Bayes-like": "5/5",
+    "LSTM": "5/5"
+  },
+  "training": {
+    "train": [
+      4.484400650944067,
+      3.379686668815672,
+      3.1780400562518825,
+      3.0157413975034983,
+      2.8542447298296323
+    ],
+    "val": [
+      3.6109530896133517,
+      3.403676554283,
+      3.3217764256163416,
+      3.2370376809043173,
+      3.1633637321661716
+    ],
+    "best_epoch": 5,
+    "best_val": 3.1633637321661716,
+    "epochs_run": 5,
+    "train_seconds": 45.85524916648865,
+    "device": "cpu"
+  },
+  "n_generated": 50,
+  "gen_len": 128,
+  "temperature": 1.0,
+  "nb_alpha": {
+    "concurrent": 0.1,
+    "prev": 0.1
+  }
+}
